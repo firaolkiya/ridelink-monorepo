@@ -1,0 +1,11 @@
+{
+	"name": "cbd-monorepo",
+	"private": true,
+	"scripts": {
+		"build": "pnpm -r run build",
+		"dev": "pnpm --filter @cbd/api dev"
+	},
+	"devDependencies": {
+		"typescript": "^5.9.3"
+	}
+}

@@ -12,7 +12,7 @@ importers:
         specifier: ^5.9.3
         version: 5.9.3
 
-  apps/api:
+  apps/server:
     dependencies:
       '@cbd/core':
         specifier: workspace:*
@@ -36,25 +36,20 @@ importers:
       tsx:
         specifier: ^4.21.0
         version: 4.21.0
-      typescript:
-        specifier: ^5.9.3
-        version: 5.9.3
 
   packages/api-client:
     dependencies:
       '@cbd/core':
         specifier: workspace:*
         version: link:../core
-    devDependencies:
-      typescript:
-        specifier: ^5.9.3
-        version: 5.9.3
 
   packages/core:
-    devDependencies:
-      typescript:
-        specifier: ^5.9.3
-        version: 5.9.3
+    dependencies:
+      '@cbd/shared':
+        specifier: workspace:*
+        version: link:../shared
+
+  packages/shared: {}
 
 packages:
 

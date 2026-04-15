@@ -1,5 +1,5 @@
 {
-	"name": "@cbd/core",
+	"name": "@cbd/shared",
 	"version": "0.0.0",
 	"private": true,
 	"type": "module",
@@ -11,8 +11,5 @@
 	},
 	"scripts": {
 		"build": "tsc -p tsconfig.json"
-	},
-	"dependencies": {
-		"@cbd/shared": "workspace:*"
 	}
 }

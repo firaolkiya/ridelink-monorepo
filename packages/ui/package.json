@@ -23,6 +23,10 @@
 		"./text": {
 			"types": "./dist/text.d.ts",
 			"import": "./dist/text.js"
+		},
+		"./auth": {
+			"types": "./dist/auth.d.ts",
+			"import": "./dist/auth.js"
 		}
 	},
 	"files": ["dist"],

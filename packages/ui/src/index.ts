@@ -9,3 +9,6 @@ export type { StackAlign, StackDirection, StackJustify, StackProps } from "./sta
 
 export { Text } from "./text.js";
 export type { TextProps, TextSize, TextTone, TextWeight } from "./text.js";
+
+export { AuthForm } from "./auth.js";
+export type { AuthFormProps, AuthFormValues, AuthMode } from "./auth.js";

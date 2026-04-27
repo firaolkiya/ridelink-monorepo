@@ -5,9 +5,10 @@ Monorepo for Ridelink services and shared libraries.
 ## Workspace structure
 
 - `apps/mobile`: Flutter mobile app
-- `apps/server`: Node.js + Express API
-- `packages/shared`: shared constants and types
-- `packages/core`: core exports used by apps/packages
+- `apps/web`: web app (Vite + React)
+- `apps/admin`: admin app (Vite + React)
+- `packages/api`: Node.js + Express API package
+- `packages/config`: shared runtime config helpers
 - `packages/api-client`: typed API client
 
 ## Prerequisites

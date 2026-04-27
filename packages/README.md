@@ -2,9 +2,9 @@
 
 Reusable workspace libraries for the monorepo.
 
-- `@cbd/shared`: shared contracts and constants
-- `@cbd/core`: core exports used by apps and clients
-- `@cbd/api-client`: typed HTTP client for the API
+- `@cbd/config`: shared runtime configuration helpers
+- `@cbd/api`: backend API package (Express app + endpoints)
+- `@cbd/api-client`: typed HTTP client for backend endpoints
 - `@cbd/ui`: reusable React UI primitives for apps
 
 Detailed package docs: [../docs/packages.md](../docs/packages.md)

@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@cbd/ui": "workspace:*",
+    "@cbd/api-client": "workspace:*",
     "react": "^19.2.4",
     "react-dom": "^19.2.4"
   },

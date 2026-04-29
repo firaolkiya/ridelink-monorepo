@@ -12,3 +12,6 @@ export type { TextProps, TextSize, TextTone, TextWeight } from "./text.js";
 
 export { AuthForm } from "./auth.js";
 export type { AuthFormProps, AuthFormValues, AuthMode } from "./auth.js";
+
+export { AuthCard } from "./auth-card.js";
+export type { AuthCardProps } from "./auth-card.js";

@@ -15,7 +15,7 @@ export interface AuthFormValues {
 	remember: boolean;
 }
 
-export interface AuthFormProps extends HTMLAttributes<HTMLDivElement> {
+export interface AuthFormProps extends Omit<HTMLAttributes<HTMLDivElement>, "onSubmit"> {
 	mode?: AuthMode;
 	title?: string;
 	subtitle?: string;

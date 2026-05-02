@@ -15,3 +15,6 @@ export type { AuthFormProps, AuthFormValues, AuthMode } from "./auth.js";
 
 export { AuthCard } from "./auth-card.js";
 export type { AuthCardProps } from "./auth-card.js";
+
+export { UserProfileCard } from "./user-profile.js";
+export type { UserProfile, UserProfileCardProps } from "./user-profile.js";

@@ -16,6 +16,24 @@ export class InMemoryUserDatabase implements UserDatabase {
 	private emailToId = new Map<string, string>();
 	private sequence = 1;
 
+	constructor() {
+		this.createUser({
+			name: "Amina Admin",
+			email: "admin@example.com",
+			password: "admin123",
+			role: "admin",
+			status: "active",
+		});
+
+		this.createUser({
+			name: "Mason Member",
+			email: "member@example.com",
+			password: "member123",
+			role: "member",
+			status: "active",
+		});
+	}
+
 	createUser(input: CreateUserInput): SafeApiUser {
 		const email = input.email.trim().toLowerCase();
 
@@ -77,6 +95,11 @@ export class InMemoryUserDatabase implements UserDatabase {
 
 	getUsers(): SafeApiUser[] {
 		return [...this.usersById.values()].map(sanitizeUser);
+	}
+
+	findById(id: string): SafeApiUser | null {
+		const user = this.usersById.get(id);
+		return user ? sanitizeUser(user) : null;
 	}
 
 	findByEmail(email: string): ApiUser | null {

@@ -40,5 +40,6 @@ export interface UserDatabase {
 	createUser(input: CreateUserInput): SafeApiUser;
 	editUser(id: string, input: EditUserInput): SafeApiUser | null;
 	getUsers(): SafeApiUser[];
+	findById(id: string): SafeApiUser | null;
 	findByEmail(email: string): ApiUser | null;
 }

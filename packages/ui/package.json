@@ -31,6 +31,10 @@
 		"./auth-card": {
 			"types": "./dist/auth-card.d.ts",
 			"import": "./dist/auth-card.js"
+		},
+		"./user-profile": {
+			"types": "./dist/user-profile.d.ts",
+			"import": "./dist/user-profile.js"
 		}
 	},
 	"files": ["dist"],

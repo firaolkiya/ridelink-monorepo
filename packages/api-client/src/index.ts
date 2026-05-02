@@ -100,5 +100,6 @@ export function createBackendApiClient(options: BackendApiClientOptions) {
 				body: JSON.stringify(payload),
 			}),
 		getUsers: () => request<UsersResponse>("/users"),
+		getUser: (id: string) => request<UserResponse>(`/users/${id}`),
 	};
 }

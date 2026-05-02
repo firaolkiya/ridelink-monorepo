@@ -13,6 +13,22 @@ export function createUsersRouter(database: UserDatabase): Router {
 		res.json({ users: database.getUsers() });
 	});
 
+	router.get("/users/:id", (req, res) => {
+		const id = req.params.id;
+		if (!id) {
+			res.status(400).json({ error: "USER_ID_REQUIRED" });
+			return;
+		}
+
+		const user = database.findById(id);
+		if (!user) {
+			res.status(404).json({ error: "USER_NOT_FOUND" });
+			return;
+		}
+
+		res.json({ user });
+	});
+
 	router.post("/users", (req, res) => {
 		const body = req.body as unknown;
 		if (!isObject(body)) {
